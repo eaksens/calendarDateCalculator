@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="calendarCalculation.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar Date Calculator</title>
+</head>
+
+<body>
+    <h1>Calendar Date Calculator</h1>
+    <p>Please input a date in format of mm/dd/yyyy:</p>
+    <label class="Calendar" translate> Enter Date: </label>
+
+    <input type="text" id="enterDate" name="enterDate" placeholder="mm/dd/yyyy">
+
+    <p>
+        <button type="button" onclick='isValidDate()'>Validate Date!</button>
+    </p>
+
+    <p>
+        <h3>Calculated Date Results:</h3>
+        <button type="button" onclick='YesterdayDate()'>Calculate Yesterday Date</button>
+        <button type="button" onclick='tmrwDate()'>Calculate Tomorrow Date</button>
+        <button type="button" onclick='dayOfWeek()'>Calculate Day of the Week</button>
+        <br><br>
+        <label class="PreviousDate" translate> Yesterday Date: </label>
+        <input type="text" id="Yesterday" readonly="readonly" name="YesterdayDate">
+        </br></br>
+        <label class="NextDate" translate> Tomorrow Date: </label>
+        <input type="text" id="Tomorrow" readonly="readonly" name="TmrwDate">
+        </br></br>
+        <label class="DayOfWeek" translate> Day of the week: </label>
+        <input type="text" id="DayOfWeek" readonly="readonly" name="DayOfWeek">
+    </p>
+
+    <p>
+        <h3>Shopping Days:</h3>
+        <!--button to get shopping days-->
+        <input type="button" id="shoppingDateButtons" onclick='shoppingDays()' value="Calculate Days Before Christmas">
+        <!--button to get shopping days-->
+        <label>Shopping Days Until Christmas </label>
+        <input type="text" id="shoppingDays" name="shoppingDays">
+        <label>days</label>
+
+        <br><br>
+        <input type="button" id="ThanksButtons" onclick='thanksDay()' value="Get Thanks Day">
+        <label>Thanksgiving Day of this input year </label>
+        <input type="text" id="thanksDay" readonly="readonly" name="thanksDay">
+
+    </p>
+    <p>
+        <h3>Zodiac Zone:</h3>
+        <button type="button" onclick='Zodiac()'>Get Your Zodiac!</button>
+        </br></br>
+        <label class="Zodiac" translate> Your Zodiac is: </label>
+        <input type="text" id="Zodiac" readonly="readonly" name="Zodiac">
+    </p>
+
+</body>
+
+</html>
