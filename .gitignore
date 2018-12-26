@@ -1,1 +1,7 @@
 log.txt
+/jasmine
+/jasmine-quickstart-master
+/node_modules
+/spec
+*.JPG
+*.json
